@@ -1,21 +1,21 @@
-body {
-    margin: 0;
-    margin-top: 50px;
+/* body { */
+    /* margin: 0; */
+    /* margin-top: 50px; */
 
-}
+/* } */
 
 header {
-    display: flex;
-    position: fixed;
+    /* display: flex; */
+    position: relative;
     top: 0;
 	z-index: 2;
     left: 0;
-    right: 0;
+    bottom: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
+    height: 100%;
+    /* line-height: 50px; */
     background-color: #eee;
 }
 
@@ -24,10 +24,11 @@ size:10px;
 }
 
 
-header * {
-    display: inline;
-    height: 50px;
-}
+/* header * { */
+    /* display: inline; */
+    /* /* width: 25%; */ */
+    /* height: 100%; */
+/* } */
 
 header ul {
     padding: 0;
