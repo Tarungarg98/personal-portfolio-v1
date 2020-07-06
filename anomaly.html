@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<title> Lokly - Address Parser </title>
+</head>
+<body>
+<div class="col-md-12";>
+<div class="row">
+<div class="col-md-3">
+</div>
+<div class="col-md-6" align='justify' style="paddign-left:10px; padding-right:10px">
+<a href="index.html"><u>Back</u></a>
+<br><br>
+<h1 align='center'>Anomaly detection in Power Consumption</h3>
+<br><br>
+<h3 align='center'>What is it about ?</h3>
+<br>
+Offices, Industries and showrooms consumes a huge amount of power on a daily basis. Due to variation in the load requirements or in the power supply, there are huge variations in the required vs actual power consumption. Such fluctuations, may lead to power breakdown which may result in power cut or a short circuit leading to a huge power loss. In either case, it creates a huge impact to the fuctioning of the industry and can result in huge financial losses. In this project, we aim to detect any abnormal power flow and raise a alert in case of signifact variation in power consumption.
+<hr>
+<h3 align='center'>How it works ?</h3>
+<br>
+The live and interactive user interface is designed using Dash-plotly. The parameters used to predict power consumption are passed as input parameters to the model. The model predicts the power consumption and returns a graph along with anomalies if any. Current faults, previous faults, and all faults displayed on the user interface. There is also an option to visualize the graphs along with input parameters to understand the cause of faults.
+<hr>
+<h3 align='center'>How we made it ?</h3>
+<br>
+The model was created using a unsupervised learning technique. We were provided with a dataset containing temperature and dewpoint for indoors and outdoors, Day of the Week, Hour of Day, Meter Name, Store Number and Actual Power Consumption in KWh. First we started with the time series analysis of the data. The findings were that the data does not follow any significant seasonal or trend component. Thus it was decided to switch to Artificial Neural Networks as the time series did not gave significant results. For ANN, we encoded Day of Week and Hour of the Day using one-hot encoding as they don't have any nominal relationship. Then a ANN model was trained using Power Consumption as the Output Variable. We trained a single hidden layer model with linear output layer. Adam optimizer was used with Mean Squared Error as the cost Function. Earlystopping was used to avoid overfitting. The font-end was designed using Dash-plotly where the model results are displayed in form of Graphs. Actual Value lying outside 95% Confidence interval of predicted value was categorised as anomaly.
+<hr>
+<h3 align='center'>Team</h3>
+<br>
+This project was designed during my Summer Internship at Walmart Labs in 2020 along with Ritish Menon and Mainak Mitra
+
+</div>
+
+<!-- <div class="col-md-6"; > -->
+<!-- <img src="static/lokly_home.png"; style="width:100%"; alt="Github"> -->
+<!-- <hr><br> -->
+<!-- <img src="static/lokly_signup.png"; style="width:100%"; alt="Github"> -->
+<!-- <hr><br> -->
+<!-- <img src="static/lokly_result.png"; style="width:100%"; alt="Github"> -->
+<!-- </div> -->
+</div>
+<br>
+<br>
+</body>
+</html>
