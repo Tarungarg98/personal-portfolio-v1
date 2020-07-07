@@ -24,6 +24,8 @@ header {
     background-color: #eee;
 }
 .sidenav {
+	font-size:20px;
+
   width: 100%; /* Set the width of the sidebar */
   position: relative; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -42,22 +44,23 @@ header {
 	margin-top:0px;
 	padding-left:0px;
 	padding-right:0px;
-  /* background-size: cover; */
 }
 .data
 {
-	background-color:lightblue;
+	background: rgba(255, 255, 255, 0.8); 
 	padding-left:20px; 
 	padding-right:20px; 
-	padding-top:20px; 
-	padding-bottom:20px; 
+	padding-top:10px; 
+	padding-bottom:10px; 
 }
+
 /* .blank{color:white;} */
 .hr1{
 	/* height:0px; */
 	/* border-width:1; */
 	color:gray;
 	/* background-color:gray; */
+	padding-top:20px;
 	padding-bottom:20px;
 	/* margin-bottom:20px; */
 }
