@@ -1,8 +1,7 @@
-/* body { */
-    /* margin: 0; */
-    /* margin-top: 50px; */
-
-/* } */
+body {
+    padding-left:0px;
+	background-size: 100% 100%;
+}
 
 header {
     /* display: flex; */
@@ -34,18 +33,26 @@ header {
 
 .content{
 	width:100%;
-	margin-top:20px;
-	padding-left:20px;
-	padding-right:20px;
+	margin-top:0px;
+	padding-left:0px;
+	padding-right:0px;
 	/* background-image:url("static/bg1.png"); */
 	background-repeat: no-repeat;
   background-attachment: fixed;
-    background-size: 75% 100%;
-background-position: right; 
   /* background-size: cover; */
 }
+.data
+{padding-left:20px; 
+padding-right:20px; 
+}
 
-
+.hr1{
+	height:4px;
+	border-width:1;
+	color:gray;
+	background-color:gray;
+	padding-bottom:0px;
+	margin-bottom:0px;
 font {
 size:10px;
 }
