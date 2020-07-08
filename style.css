@@ -118,7 +118,7 @@ size:10px;
 
 #college_projects
 {
-		background-image:url("static/college.png");
+	background: rgba(0, 0,0, 0.6); 
 	font-size:25px;
 	color:white;
 }
