@@ -6,8 +6,8 @@
     font-size: 20px;
   }
   .data{
-	padding-left:200px;
-	padding-right:200px;
+	padding-left:100px;
+	padding-right:100px;
   }	  
 	#workexp img{
 		width:100%;
@@ -29,6 +29,16 @@
   
 }
 @media screen and (max-width: 600px) {
+	#lokly
+	{
+		margin-left:20px;
+		margin-right:20px;
+	}
+	#anomaly
+	{
+		margin-left:20px;
+		margin-right:20px;
+	}
   header {
     font-size: 14px;
   }
@@ -77,8 +87,8 @@
 body {
   text-align:left;
 	padding-top:20px;
-  display: flex;
     padding:0px;
+  display: flex;
 	background-size: 100% 100%;
 	background-image:url("static/bg1.png");
 	background-repeat: no-repeat;

@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="w3.css">
+
 <title> Tarun Garg </title>
 </head>
-<header>
-<div><a href="#about">About</a></div>
-<div><a href="#area_of_interests">Interests</a></div>
-<div><a href="#education">Education</a></div>
-<div><a href="#workexp">Work Experience</a></div>
-<div><a href="#course_work">Courses</a></div>
-<div><a href="#technical_proficiency">Skills</a></div>
-</header>
+
 <body>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<div><a href="#about" onclick="closeNavMobile()">About</a></div>
+<div><a href="#area_of_interests" onclick="closeNavMobile()">Interests</a></div>
+<div><a href="#education" onclick="closeNavMobile()">Education</a></div>
+<div><a href="#workexp" onclick="closeNavMobile()">Work Experience</a></div>
+<div><a href="#course_work" onclick="closeNavMobile()">Courses</a></div>
+<div><a href="#technical_proficiency" onclick="closeNavMobile()">Skills</a></div>
+</div>
 <div class="col-md-12"; style="padding:0;">
+<div class="col-md-12"; style="padding:0;">
+<button class="openbtn" onclick="openNav()">☰ Navigate</button>
+<div id="main">
 <div align='Justify'>
 <div class="data about_me" id="about">
 <div class='row'>
@@ -38,11 +45,6 @@ Phone : +91-7674924588
 
 </div>
 </div>
-<!-- <div class="col-md-8"> -->
-<!-- <ul> -->
-<!-- <li>Deep Learning -->
-<!-- <li>Natural Language Processing -->
-<!-- </div> -->
 </div>
 <hr>
 </div>
@@ -427,3 +429,5 @@ Email : Manish@99roomz.com
 </body>
 
 </html>
+
+ <script src="side.js"></script> 
