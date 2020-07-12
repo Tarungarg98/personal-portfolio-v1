@@ -23,6 +23,9 @@
 	  padding-bottom:10%;
 
 	  }
+	.about_me{
+	  height:100vh;
+	  }
 	 #hotel
 	 {
 	 padding:40px;
@@ -88,10 +91,10 @@
 
 	  }
 
-  }
-  #about_me
+  .about_me
   {
-	    background-size: cover;
+	height:100%;
+  }
   }
 	
 
@@ -147,7 +150,6 @@ header * {
 {	
 	background-image:url("static/background.gif");
 	color:white;
-	height:100vh;
 	width:100%;
 	padding-top:10%;
 	}
@@ -190,8 +192,4 @@ footer {
 ul{
 	margin-left:10px;
 	padding-left:10px;
-}
-.responsive {
-  max-height: 100vh;
-  width: auto;
 }
