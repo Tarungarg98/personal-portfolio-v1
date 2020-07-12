@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<title>  Feature extraction from hotel reviews  </title>
+</head>
+<body>
+<br>
+<div class="col-md-12";>
+<a href="index.html"><u>Back</u></a>
+<br>
+<div class="row">
+<div class="col-md-3">
+</div>
+<div class="col-md-6 data" id="hotel" align='justify'>
+<br>
+<h1 align='center'> Feature extraction from hotel reviews </h3>
+<br>
+<h3 align='center'>What is it about ?</h3>
+<br>
+While booking any hotel, people generally spend a lot of time going through reviews to decide which hotel to choose from. In this project, we aim to design a model which will extract the positive and negative features from the hotel reviews. It will then display the features and overall rating of the hotel based on reviews.
+<hr>
+<h3 align='center'>How it works ?</h3>
+<br>
+Initially a csv file with hotel reviews is provided. Hotels with reviews less than 10 are removed to have an unbiased prediction. Reviews are split using PunktSentenceTokenizer and are converted into lower case. Each sentence is then tested for sentiment using SentimentIntensityAnalyzer. The words for each sentence are tokenized and lemmatized. If the word is a feature, the word is stored in positive or negative features for the hotel based on sentiment polarity. For checking the feature, the words are tagged using a pre-trained model. For each hotel, the frequency of positive and negative feature is stored as feature scores. The words common in both were removed from one by updating the frequency in other with the difference between two. After that, features with an average frequency of less than 0.2 or greater than 0.95 are removed to avoid bias. The remaining words are then returned as positive or negative features.
+<hr>
+
+<h3 align='center'>How we made it ?</h3>
+<br>
+A dataset with reviews of various hotels was provided with a total of 188969 reviews. The language of the review was detected using spacy language detector and the reviews which were not in English were removed. The spelling was then corrected using TextBlob. Each review was then split using PunktSentenceTokenizer and nltk word tokenizer. The words were tagged using nltk Part of Speech tagger, if the word is a noun then it is stemmatized and lemmatized and added to features vocabulary else it was added to the non-features vocabulary. Reviews with only feature words were then passed to TfidfVectorizer. The tf-idf score for each word was cumulated and the top 70% words were categorized as feature and rest as non-features. The words are then stored in a file to train the model. The tags were verified manually for good accuracy. It was decided to go ahead with Stanford-ner-tagger to create our custom Part of Speech tagging. The model was trained on 1140478 words with 2 labels, namely, features and others. It was then used to label any new word as feature or non-features. We achieved an accuracy of 94% with this model.
+<hr>
+<h3 align='center'>Scope for improvements ?</h3>
+<br>
+There is definitely a huge scope for future improvements with accurate data-tagging. Several new NLP algorithms have come and the accuracy if the model can be improved by trying out other Machine Learning Algorithms.
+<hr>
+<h3 align='center'>Team</h3>
+<br>
+This project was designed during my Summer Internship at 99 roomz in 2019 along with Arpit Jadiya, Manish Sharma and Spandan Singh
+<br>
+<br>
+</div>
+
+</div>
+<br>
+</body>
+</html>

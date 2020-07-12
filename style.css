@@ -23,6 +23,22 @@
 	  padding-bottom:10%;
 
 	  }
+	 #hotel
+	 {
+	 padding:40px;
+	 }
+	 #lokly
+	 {
+	 padding:40px;
+	 }
+	 #anomaly
+	 {
+	 padding:40px;
+	 }
+	 #image
+	 {
+	 padding:40px;
+	 }
   
 }
 @media screen and (max-width: 600px) {

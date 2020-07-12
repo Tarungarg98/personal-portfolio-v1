@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<title> Image Processing </title>
+</head>
+<body>
+<br>
+<div class="col-md-12";>
+<a href="index.html"><u>Back</u></a>
+<br>
+<div class="row">
+<div class="col-md-3">
+</div>
+<div class="col-md-6 data" id="image" align='justify'>
+<br>
+<h1 align='center'>Image Processing</h3>
+<br>
+<h3 align='center'>What is it about ?</h3>
+<br>
+In this project, we aim to design a device which would calculate the volume of a pseudocyst in the pancreas with image processing obtained from endoscopy.
+<hr>
+<h3 align='center'>How we made it ?</h3>
+<br>
+The predictions were made using an unsupervised learning technique. A image is passed as input. White and black pixels are separates from each image. While pixels are fitted into 50 clusters iteratively to have a smooth curve. While reducing clusters, convexHull was formed and outliers were removed by removing all points outside 90% of the radius. Less than 3 clusters in a radius of 100 pixels were also removed as outliers. The final 50 clusters from white pixels was fitted using convexHull as the final Boundary. The black pixels inside the Hull were again processed to have a precised estimation of area. The area was then converted to volume by inverting the projection to the provided angle. 
+<hr>
+<h3 align='center'>Team</h3>
+<br>
+This project was designed during my college in January-2019 to August-2019 under the guidance of Prof Santanu Datta
+<br>
+<br>
+</div>
+
+</div>
+<br>
+</body>
+</html>
