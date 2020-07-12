@@ -131,7 +131,7 @@ header * {
 {	
 	background-image:url("static/background.gif");
 	color:white;
-	height:100%;
+	height:100vh;
 	width:100%;
 	padding-top:10%;
 	}
