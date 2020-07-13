@@ -10,20 +10,27 @@
 
 <title> Tarun Garg </title>
 </head>
-
+<div class="nav">
+<a href="#about" onclick="closeNavMobile()">About</a>
+<a href="#area_of_interests" onclick="closeNavMobile()">Interests</a>
+<a href="#education" onclick="closeNavMobile()">Education</a>
+<a href="#workexp" onclick="closeNavMobile()">Experience</a>
+<a href="#skills" onclick="closeNavMobile()">Skills</a>
+<a href="#course_work" onclick="closeNavMobile()">Courses</a>
+</div>
 <body>
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 <div><a href="#about" onclick="closeNavMobile()">About</a></div>
 <div><a href="#area_of_interests" onclick="closeNavMobile()">Interests</a></div>
 <div><a href="#education" onclick="closeNavMobile()">Education</a></div>
-<div><a href="#workexp" onclick="closeNavMobile()">Work Experience</a></div>
+<div><a href="#workexp" onclick="closeNavMobile()">Experience</a></div>
+<div><a href="#skills" onclick="closeNavMobile()">Skills</a></div>
 <div><a href="#course_work" onclick="closeNavMobile()">Courses</a></div>
-<div><a href="#technical_proficiency" onclick="closeNavMobile()">Skills</a></div>
 </div>
 <div class="col-md-12"; style="padding:0;">
 <div class="col-md-12"; style="padding:0;">
-<input id="navigate" type="button" value="☰ Navigate" class="openbtn" onclick="openNav()" >
+<input id="navigate" type="button" value="☰" class="openbtn" onclick="openNav()" >
 <div id="main">
 <div align='Justify'>
 <div class="data about_me" id="about">
@@ -119,76 +126,73 @@ Saint Anselm's School, Mansarovar, Jaipur
 <h1 align="center" >Work Experience</h1>
 <hr>
 <div class='row'>
-<div class="col-md-3">
-<strong>Artficial Intelligence Institute, University of South Carolina</strong>
-<br>
-July 2020 - Present
-</div>
-<div class="col-md-3">
-<img src="static/aiisc.png" alt="aiisc">
-</div>
-<div class="col-md-6">
+<div class="col-md-5">
 <h3>Research Intern</h3>
 <ul>
 <li>Developing and using knowledge graphs along with Deep Learning Algorithms to improve the information extraction process from clinical or health-related text
 </ul>
 </div>
+<div class="col-md-3">
+<img src="static/aiisc.png" alt="aiisc">
+</div>
+<div class="col-md-4">
+<strong>Artificial Intelligence Institute, University of South Carolina</strong>
+<br>
+July 2020 - Present
+</div>
 </div>
 <hr>
 <div class='row'>
-<div class="col-md-3">
-<strong>Walmart Labs</strong>
-<br>
-May 2020 - July 2020
-</div>
-<div class="col-md-3">
-<img src="static/walmart.png" alt="walmart">
-</div>
-<div class="col-md-6">
+<div class="col-md-5">
 <h3>Data Science Intern</h3>
 <ul>
 <li><a href="anomaly.html">Anomaly detection in Power Consumption</a>
 </ul>
 </div>
+<div class="col-md-3">
+<img src="static/walmart.png" alt="walmart">
+</div>
+<div class="col-md-4">
+<strong>Walmart Labs</strong>
+<br>
+May 2020 - July 2020
+</div>
 </div>
 <hr>
 <div class='row'>
-<div class="col-md-3">
-<strong>99roomz</strong>
-<br>
-May 2019 - July 2019
-</div>
-<div class="col-md-3">
-<img src="static/99roomz.png" alt="99roomz">
-</div>
-<div class="col-md-6">
+<div class="col-md-5">
 <h3>Data Science Intern</h3>
 <ul>
 <li> <a href="hotel.html">Feature extraction from hotel reviews</a>
 <li> <a href="lokly.html">Indian Address Parser</a>
 </ul>
 </div>
+<div class="col-md-3">
+<img src="static/99roomz.png" alt="99roomz">
+</div>
+<div class="col-md-4">
+<strong>99roomz</strong>
+<br>
+May 2019 - July 2019
+</div>
 
 </div>
 <hr>
 <div class='row'>
-<div class="col-md-3">
-KEC International
-<br>
-May 2018 - July 2018
+<div class="col-md-5">
+<h3>Logistic Intern</h3>
+<ul>
+<li>
+Vehicle Waiting Time Analysis
+</ul>
 </div>
 <div class="col-md-3">
 <img src="static/kec.png" alt="KEC">
 </div>
-<div class="col-md-6">
-<h3>Logistic Intern</h3>
-
-<ul>
-<li>
-<!-- <a href="https://drive.google.com/file/d/1W1rY7WfhufNPB_JuTm9nxgesBTQ4TDA9/view?usp=sharing"> -->
-Vehicle Waiting Time Analysis
-<!-- </a> -->
-</ul>
+<div class="col-md-4">
+KEC International
+<br>
+May 2018 - July 2018
 </div>
 </div>
 <hr>
@@ -268,7 +272,37 @@ Applied Econometrics
 </div>
 <hr>
 </div>
-<div class="hr1"></div>
+<div class="data" id="skills">
+
+<h1 align="center">Skills</h1>
+<hr>
+<div class='row'>
+<div class="col-md-4">
+<h3>Hard Skills</h3>
+<br>
+<ul>
+<li>Python Expertise
+<li>Machine Learning
+<li>Data Science
+<li>Natural Language Processing
+<li>Deep Learning
+</ul>
+</div>
+<div class="col-md-4">
+<img src="static/skill.png" alt="skills">
+</div>
+<div class="col-md-4">
+<h3>Soft Skills</h3>
+<br>
+<ul>
+<li>Creativity
+<li>Leadership
+<li>Self-Disciplane
+<li>Time Management
+</div>
+</div>
+<hr>
+</div>
 <div class="data" id="technical_proficiency">
 
 <h1 align="center">Technical Proficiency</h1>
@@ -287,15 +321,7 @@ Applied Econometrics
 </ul>
 </div>
 <div class="col-md-4">
-<ul>
-<li>Data Science
-<li>Artificial Intelligence
-<li>Natural Language Processing
-<li>Image Processing
-<li>Deep Learning
-<li>Machine Learning
-<li>Time Series
-</ul>
+<img src="static/tech.png" alt="tech" style="padding-top:20px;">
 </div>
 <div class="col-md-4">
 <ul>

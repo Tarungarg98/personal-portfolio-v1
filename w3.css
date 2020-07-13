@@ -51,19 +51,21 @@
   /* padding: 16px; */
 }
 @media screen and (min-width: 601px) {
-	.openbtn {
-	  font-size: 20px;
+    .openbtn {
+      font-size: 20px;
   padding: 10px 15px;
+  display:none;
 
-	  }
-}	
-	
-	
-	
+
+      }
+}   
+    
+    
+    
 @media screen and (max-width: 600px) {
-	.openbtn {
-	  font-size: 30px;
+    .openbtn {
+      font-size: 30px;
     padding: 0px 15px;
 
-	}
+    }
 }

@@ -3,8 +3,8 @@
     font-size: 20px;
   }
   .data{
-	padding-left:100px;
-	padding-right:100px;
+	padding-left:200px;
+	padding-right:200px;
   }	  
 	#workexp img{
 		width:100%;
@@ -15,7 +15,7 @@
 	  padding-bottom:10%;
 	}
 	#education img{
-		width:100px;
+		width:40%;
 	  display: block;
 	  margin-left: auto;
 	  margin-right: auto;
@@ -43,6 +43,43 @@
 	 padding:40px;
 	 }
   
+	  img
+	  {
+				width:100%;
+		  /* display: block; */
+		  padding:0;
+
+	  }
+	.nav {
+		/* display: flex; */
+		position: fixed;
+		top: 0;
+		z-index: 2;
+		right: 0;
+		/* height:30px; */
+			/* display: inline-block; */
+		left: 0;
+		color:black;
+		/* justify-content: center; */
+		/* align-items: center; */
+		text-align: center;
+		/* line-height: 50px; */
+		background-color: black;
+	}
+
+	.nav * {
+		display: inline-block;
+		height: 100%;
+		font-size:30px;
+	  justify-content: space-evenly;
+	}
+	
+	.nav a{
+		width:16%;
+	}
+	.nav a:hover {
+	  background-color: white;
+	}
 }
 @media screen and (max-width: 600px) {
 	#lokly
@@ -58,7 +95,10 @@
 
   body{
     font-size: 15px;
-  }	  
+  }
+.nav{
+		display:none;
+}
   .data{
 	padding-left:20px;
 	padding-right:20px;
@@ -73,13 +113,21 @@
 	  font-size:20px;
 
   }
-	#workexp img{
-		width:50%;
+	  img
+	  {
+				width:100%;
+		  /* display: block; */
+		  padding:10px;
+
+	  }
+
+  #workexp img{
+		width:60%;
 	  display: block;
 	  margin-left: auto;
 	  margin-right: auto;
-	  padding-top:10%;
-	  padding-bottom:10%;
+	  /* padding-top:10%; */
+	  /* padding-bottom:10%; */
 	}
 	#education img{
 		width:40%;
@@ -111,34 +159,12 @@ body {
 	}
 	
 
-header {
-    /* display: flex; */
-    position: fixed;
-    top: 0;
-	z-index: 2;
-    right: 0;
-	/* height:30px; */
-	    /* display: inline-block; */
-    left: 0;
-	color:black;
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: center;
-    /* line-height: 50px; */
-    background-color: black;
-}
-
-header * {
-    display: inline-block;
-    height: 100%;
-  justify-content: space-evenly;
-}
 .data
 {
 
 	background: rgba(255, 255, 255, 0.7); 
-	padding-top:20px; 
-	padding-bottom:20px; 
+	padding-top:35px; 
+	padding-bottom:10px; 
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 
@@ -167,6 +193,12 @@ header * {
 		background-image:url("static/book.png");
 	color:white;
 }
+#skills
+{
+	background: rgba(42, 157,244, 1); 
+
+	color:black;
+}
 #volunteer
 {
 	background: rgba(0, 0,0, 0.6); 
@@ -180,7 +212,7 @@ header * {
 
 #college_projects
 {
-	background: rgba(0, 0,0, 0.6); 
+	background: rgba(72, 42, 94, 1); 
 	color:white;
 }
 
@@ -193,3 +225,4 @@ ul{
 	margin-left:10px;
 	padding-left:10px;
 }
+
