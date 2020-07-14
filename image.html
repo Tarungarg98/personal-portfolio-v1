@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sidebar.css">
+
 <title> Image Processing </title>
 </head>
+
+<div class="nav">
+<a href="index.html#about" onclick="closeNavMobile()">About</a>
+<a href="index.html#area_of_interests" onclick="closeNavMobile()">Interests</a>
+<a href="index.html#education" onclick="closeNavMobile()">Education</a>
+<a href="index.html#workexp" onclick="closeNavMobile()">Experience</a>
+<a href="index.html#skills" onclick="closeNavMobile()">Skills</a>
+<a href="index.html#course_work" onclick="closeNavMobile()">Courses</a>
+</div>
+<input id="navigate" type="button" value="☰" class="openbtn" onclick="openNav()" >
 <body>
+<div id="mySidebar" class="sidebar">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<div><a href="index.html#about" onclick="closeNavMobile()">About</a></div>
+<div><a href="index.html#area_of_interests" onclick="closeNavMobile()">Interests</a></div>
+<div><a href="index.html#education" onclick="closeNavMobile()">Education</a></div>
+<div><a href="index.html#workexp" onclick="closeNavMobile()">Experience</a></div>
+<div><a href="index.html#skills" onclick="closeNavMobile()">Skills</a></div>
+<div><a href="index.html#course_work" onclick="closeNavMobile()">Courses</a></div>
+</div>
 <br>
 <div class="col-md-12";>
+<div id="main">
 <a href="index.html"><u>Back</u></a>
 <br>
 <div class="row">
@@ -39,3 +62,4 @@ This project was designed during my college in January-2019 to August-2019 under
 <br>
 </body>
 </html>
+ <script src="js/side.js"></script> 

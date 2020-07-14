@@ -5,20 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sidebar.css">
+
 <title> Lokly - Address Parser </title>
 </head>
+<div class="nav">
+<a href="index.html#about" onclick="closeNavMobile()">About</a>
+<a href="index.html#area_of_interests" onclick="closeNavMobile()">Interests</a>
+<a href="index.html#education" onclick="closeNavMobile()">Education</a>
+<a href="index.html#workexp" onclick="closeNavMobile()">Experience</a>
+<a href="index.html#skills" onclick="closeNavMobile()">Skills</a>
+<a href="index.html#course_work" onclick="closeNavMobile()">Courses</a>
+</div>
+<input id="navigate" type="button" value="☰" class="openbtn" onclick="openNav()" >
 <body>
+<div id="mySidebar" class="sidebar">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<div><a href="index.html#about" onclick="closeNavMobile()">About</a></div>
+<div><a href="index.html#area_of_interests" onclick="closeNavMobile()">Interests</a></div>
+<div><a href="index.html#education" onclick="closeNavMobile()">Education</a></div>
+<div><a href="index.html#workexp" onclick="closeNavMobile()">Experience</a></div>
+<div><a href="index.html#skills" onclick="closeNavMobile()">Skills</a></div>
+<div><a href="index.html#course_work" onclick="closeNavMobile()">Courses</a></div>
+</div>
 <br>
 <div class="col-md-12";>
-<a href="index.html"><u>Back</u></a>
+<div id="main">
+
 <br>
+
 <div class="row">
 <div class="col-md-3">
 </div>
 <div class="col-md-6 data" id="lokly" align='justify'>
 <br>
 <h1 align='center'>Lokly - Indian Adress Parser</h3>
+<img src="static/lokly_result.png"  alt="lokly">
 <br>
 <h3 align='center'>What is it about ?</h3>
 <br>
@@ -28,9 +52,23 @@ Addresses often provide a significant amount of intelligence about the buying an
 <br>
 Just go to <a href="http://lokly.in">lokly</a> and enter the address. The request will be passed as an API to the backend where the predictions are made. The results are then returned back to the front-end. There is an option to create an account to have access to more number of searches.
 <hr>
+<div class="row number" align="center">
+<div class="col-md-4">
+<strong>13000</strong><br>
+Addresses Tagged
+</div>
+<div class="col-md-4">
+<strong>102082</strong><br>
+Words Tagged
+</div>
+<div class="col-md-4">
+<strong>83%</strong><br>
+Accuracy
+</div>
+</div>
 <h3 align='center'>How we made it ?</h3>
 <br>
-A dataset with just Indian Addresses was provided. It was decided to go ahead with Stanford-ner-tagger to create our custom Part of Speech tagging. We started with pre-processing the data, removed the punctuations, converted all words to lowercase. We then tagged the words with the corresponding labels and trained the model using Stanford-ner-tagger. The server is created inside a docker container and it is deployed on AWS EC2 cloud storage. We trained 102082 words in total which sums up to around 13000 words with an average of 8 words per address. We achieved an accuracy of 83% with this model.
+A dataset with just Indian Addresses was provided. It was decided to go ahead with Stanford-ner-tagger to create our custom Part of Speech tagging. We started with pre-processing the data, removed the punctuations, converted all words to lowercase. We then tagged the words with the corresponding labels and trained the model using Stanford-ner-tagger. The server is created inside a docker container and it is deployed on AWS EC2 cloud storage. We trained 102082 words in total which sums up to around 13000 addresses with an average of 8 words per address. We achieved an accuracy of 83% with this model.
 <hr>
 <h3 align='center'>Scope for improvements ?</h3>
 <br>
@@ -43,14 +81,11 @@ This project was designed during my Summer Internship at 99 roomz in 2019 along 
 <br>
 </div>
 
-<!-- <div class="col-md-6"; > -->
-<!-- <img src="static/lokly_home.png"; style="width:100%"; alt="Github"> -->
-<!-- <hr><br> -->
-<!-- <img src="static/lokly_signup.png"; style="width:100%"; alt="Github"> -->
-<!-- <hr><br> -->
-<!-- <img src="static/lokly_result.png"; style="width:100%"; alt="Github"> -->
-<!-- </div> -->
+</div>
+</div>
 </div>
 <br>
 </body>
 </html>
+
+ <script src="js/side.js"></script> 

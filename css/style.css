@@ -80,6 +80,23 @@
 	.nav a:hover {
 	  background-color: white;
 	}
+	
+	#lokly img:hover{
+		transform:scale(2);
+	}
+	#lokly img{
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+	 .number{
+		background: rgba(72, 3, 84,0.4);
+		padding:0;
+		padding-top:40px;
+		padding-bottom:50px;
+		color:white;
+		margin-bottom:10px;
+		font-size:20px;
+	}
 }
 @media screen and (max-width: 600px) {
 	#lokly
@@ -92,9 +109,19 @@
 		margin-left:20px;
 		margin-right:20px;
 	}
+	#hotel
+	{
+		margin-left:20px;
+		margin-right:20px;
+	}
+	#image
+	{
+		margin-left:20px;
+		margin-right:20px;
+	}
 
   body{
-    font-size: 15px;
+    font-size: 18px;
   }
 .nav{
 		display:none;
@@ -143,6 +170,12 @@
   {
 	height:100%;
   }
+	#lokly img{
+		display:none;
+	}
+	 .number{
+		display:none;
+	}
   }
 	
 
@@ -152,7 +185,7 @@ body {
     padding:0px;
   display: flex;
 	background-size: 100% 100%;
-	background-image:url("static/bg1.png");
+	background-image:url("../static/bg1.png");
 	background-repeat: no-repeat;
   background-attachment: fixed;
 
@@ -171,10 +204,9 @@ body {
  
 	}
 
-
 .about_me
 {	
-	background-image:url("static/background.gif");
+	background-image:url("../static/background.gif");
 	color:white;
 	width:100%;
 	padding-top:10%;
@@ -190,7 +222,7 @@ body {
 
 #education
 {
-		background-image:url("static/book.png");
+		background-image:url("../static/book.png");
 	color:white;
 }
 #skills
@@ -212,8 +244,28 @@ body {
 
 #college_projects
 {
-	background: rgba(72, 42, 94, 1); 
+	background: rgba(0, 0,0, 0.6); 
+
 	color:white;
+}
+#workexp
+{
+	background: rgba(143, 224, 132, 1); 
+
+	/* color:white; */
+}
+#certificates
+{
+	background: rgba(143, 224, 132, 1); 
+
+
+	/* color:white; */
+}
+#references
+{
+	background: rgba(42, 157,244, 1); 
+
+	/* color:white; */
 }
 
 
