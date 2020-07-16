@@ -109,11 +109,10 @@
 		transform:scale(1.5);
 		z-index:2;
 	}
-	#contact a{
-		padding-left:10px;
-		padding-right:10px;
+	#contact{
+		   margin: auto;
+
 	}
-	
 }
 @media screen and (max-width: 600px) {
 	#lokly
@@ -225,11 +224,16 @@ body {
 	}
 
 .about_me
-{	
+	{	
 	background-image:url("../static/background.gif");
 	color:white;
 	width:100%;
 	padding-top:10%;
+	}
+.about_me img{
+	width:100px;
+	padding-left:10px;
+	padding-right:10px;
 	}
 
 /* #area_of_interests */
@@ -299,6 +303,22 @@ body {
 	/* color:white; */
 }
 
+
+#contact img{
+	width:100px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#contact a:link{
+color:black}
+/* #workexp a:link{ */
+/* color:black} */
+/* #college_projects a:link{ */
+/* color:black} */
+
+.about_me a:link{
+color:white}
+	
 
 footer {
     text-align: center;
