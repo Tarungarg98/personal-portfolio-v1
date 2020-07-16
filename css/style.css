@@ -312,6 +312,8 @@ body {
 }
 #contact a:link{
 color:black}
+#contact a:visited{
+color:black}
 /* #workexp a:link{ */
 /* color:black} */
 /* #college_projects a:link{ */
