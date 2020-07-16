@@ -1,10 +1,10 @@
 @media screen and (min-width: 601px) {
   body{
-    font-size: 20px;
+    font-size: 23px;
   }
   .data{
-	padding-left:200px;
-	padding-right:200px;
+	padding-left:100px;
+	padding-right:100px;
   }	  
 	#workexp img{
 		width:100%;
@@ -24,6 +24,7 @@
 
 	  }
 	.about_me{
+	  min-height:100%;
 	  height:100vh;
 	  }
 	 #hotel
@@ -81,15 +82,16 @@
 	  background-color: white;
 	}
 	
-	#lokly img:hover{
-		transform:scale(2);
+	img:hover{
+		transform:scale(1.5);
+		z-index:2;
 	}
 	#lokly img{
 		padding-top:20px;
 		padding-bottom:20px;
 	}
 	 .number{
-		background: rgba(72, 3, 84,0.4);
+		background: rgba(72, 3, 84,0.5);
 		padding:0;
 		padding-top:40px;
 		padding-bottom:50px;
@@ -97,6 +99,15 @@
 		margin-bottom:10px;
 		font-size:20px;
 	}
+	.number:hover{
+		transform:scale(1.5);
+		z-index:2;
+	}
+	#contact a{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	
 }
 @media screen and (max-width: 600px) {
 	#lokly
@@ -195,7 +206,7 @@ body {
 .data
 {
 
-	background: rgba(255, 255, 255, 0.7); 
+	background: rgba(255, 255, 255, 0.3); 
 	padding-top:35px; 
 	padding-bottom:10px; 
 	background-size: 100% 100%;
@@ -233,37 +244,48 @@ body {
 }
 #volunteer
 {
-	background: rgba(0, 0,0, 0.6); 
+	background: rgba(0, 0,0, 0.8); 
 	color:white;
 }
 #extra_cur
 {
-	background: rgba(0, 0,0, 0.6); 
+	background: rgba(0, 0,0, 0.8); 
 	color:white;
 }
 
 #college_projects
 {
-	background: rgba(0, 0,0, 0.6); 
+	/* background: rgba(0, 0,0, 0.6);  */
+
+	color:black;
+}
+#course_projects
+{
+	background: rgba(0, 0,0, 0.8); 
 
 	color:white;
 }
 #workexp
 {
-	background: rgba(143, 224, 132, 1); 
+	background: rgba(143, 224, 132, 0.8); 
+		/* background-image:url("../static/certificates.png"); */
+		  /* background-repeat: no-repeat; */
+	/* background-size: 100% 100%; */
 
 	/* color:white; */
 }
 #certificates
 {
-	background: rgba(143, 224, 132, 1); 
+	/* background: rgba(143, 224, 132, 1);  */
 
 
 	/* color:white; */
 }
 #references
 {
-	background: rgba(42, 157,244, 1); 
+		background-image:url("../static/references.png");
+
+	/* background: rgba(42, 157,244, 1);  */
 
 	/* color:white; */
 }
