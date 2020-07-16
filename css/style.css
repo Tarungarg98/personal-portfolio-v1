@@ -92,6 +92,10 @@
 		padding-top:20px;
 		padding-bottom:20px;
 	}
+	#anomaly img{
+		padding-top:20px;
+		padding-bottom:20px;
+	}
 	 .number{
 		background: rgba(72, 3, 84,0.5);
 		padding:0;
@@ -184,6 +188,9 @@
 	height:100%;
   }
 	#lokly img{
+		display:none;
+	}
+	#anomaly img{
 		display:none;
 	}
 	 .number{
