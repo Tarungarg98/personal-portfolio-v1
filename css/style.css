@@ -313,7 +313,6 @@ body {
 
 #course_projects
 {
-	/* background: rgba(0, 0,0, 0.8);  */
 
 	color:black;
 }
@@ -321,11 +320,6 @@ body {
 {
 	background: rgba(143, 224, 132, 0.8); 
 	color:black;
-		/* background-image:url("../static/certificates.png"); */
-		  /* background-repeat: no-repeat; */
-	/* background-size: 100% 100%; */
-
-	/* color:white; */
 }
 #workexp h3{
 	color:#800000;
