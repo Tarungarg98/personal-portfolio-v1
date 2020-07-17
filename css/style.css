@@ -1,21 +1,27 @@
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
   body{
     font-size: 23px;
   }
-  .data{
-	padding-left:100px;
-	padding-right:100px;
-  }	  
+
+  
 	#workexp img{
-		width:100%;
+		width:70%;
 	  display: block;
 	  margin-left: auto;
 	  margin-right: auto;
 	  padding-top:10%;
 	  padding-bottom:10%;
 	}
+
+	 .data{
+		 padding-left:15vw;
+		 padding-right:15vw;
+ 		padding-top:10vh;
+		padding-bottom:10vh;
+	 }
 	#education img{
-		width:40%;
+		width:80%;
+		max-width:150px;
 	  display: block;
 	  margin-left: auto;
 	  margin-right: auto;
@@ -23,32 +29,47 @@
 	  padding-bottom:10%;
 
 	  }
-	.about_me{
-	  min-height:100%;
-	  height:100vh;
+	.home{
+	  min-height:100vh;
+	  height:100%;
 	  }
+	.home h1{
+		font-size:60px;
+	}
+	.home h2{
+		font-size:40px;
+	}
+	.home h3{
+		font-size:30px;
+	}
+	.details{
+		padding:20px;
+	}
 	 #hotel
 	 {
-	 padding:40px;
+	 padding:10vh 20vw 10vh 20vw;
+
 	 }
+
 	 #lokly
 	 {
-	 padding:40px;
+	 padding:10vh 20vw 10vh 20vw;
 	 }
 	 #anomaly
 	 {
-	 padding:40px;
+	 padding:10vh 20vw 10vh 20vw;
+
 	 }
 	 #image
 	 {
-	 padding:40px;
+	 padding:10vh 20vw 10vh 20vw;
 	 }
   
 	  img
 	  {
-				width:100%;
-		  /* display: block; */
-		  padding:0;
+		width:100%;
+		margin:auto;
+		padding:auto;
 
 	  }
 	.nav {
@@ -73,7 +94,7 @@
 	.nav * {
 		display: inline-block;
 		height: 100%;
-		font-size:30px;
+		font-size:2.4vw;
 	  justify-content: space-evenly;
 	}
 	
@@ -86,6 +107,10 @@
 	
 	img:hover{
 		transform:scale(1.5);
+		z-index:2;
+	}
+	#technical_proficiency img:hover{
+		transform:scale(1);
 		z-index:2;
 	}
 	#lokly img{
@@ -114,8 +139,22 @@
 		   padding-bottom:40px;
 
 	}
+	#about{
+	  min-height:100vh;
+		height:100%;
+		font-size:26px;
+
+	}
+	h1{
+		padding-bottom:40px;
+	}
+	.home h1{
+		padding-bottom:0px;
+
+	}
+
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
 	#lokly
 	{
 		margin-left:20px;
@@ -152,11 +191,7 @@
 	  font-size:30px;
 
   }
-  h3
-  {
-	  font-size:20px;
 
-  }
 	  img
 	  {
 				width:100%;
@@ -183,10 +218,14 @@
 
 	  }
 
-  .about_me
+  .home
   {
 	height:100%;
   }
+  	.home h1{
+		font-size:50px;
+	}
+
 	#lokly img{
 		display:none;
 	}
@@ -198,7 +237,11 @@
 	}
   }
 	
+img {
+		margin:auto;
+		padding:auto;
 
+}
 body {
   text-align:left;
 	padding-top:20px;
@@ -216,7 +259,7 @@ body {
 {
 
 	background: rgba(255, 255, 255, 0.3); 
-	padding-top:35px; 
+	padding-top:45px; 
 	padding-bottom:10px; 
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -224,17 +267,18 @@ body {
  
 	}
 
-.about_me
+.home
 	{	
-	background-image:url("../static/background.gif");
+	background-image:url("../static/background.png");
 	color:white;
 	width:100%;
 	padding-top:10%;
 	}
-.about_me img{
+.home img{
 	width:100px;
 	padding-left:10px;
 	padding-right:10px;
+	padding-top:20px;
 	}
 
 /* #area_of_interests */
@@ -267,26 +311,45 @@ body {
 	color:white;
 }
 
-#college_projects
+#course_projects
 {
-	/* background: rgba(0, 0,0, 0.6);  */
+	/* background: rgba(0, 0,0, 0.8);  */
 
 	color:black;
 }
-#course_projects
-{
-	background: rgba(0, 0,0, 0.8); 
-
-	color:white;
-}
-#workexp
+#college_projects
 {
 	background: rgba(143, 224, 132, 0.8); 
+	color:black;
 		/* background-image:url("../static/certificates.png"); */
 		  /* background-repeat: no-repeat; */
 	/* background-size: 100% 100%; */
 
 	/* color:white; */
+}
+#workexp h3{
+	color:#800000;
+}
+#workexp h4{
+	color:green;
+}
+.home h2{
+	color:gold;
+}
+.home h3{
+	color:#d6dbdf;
+}
+#college_projects h3{
+	color:#800000;
+}
+#college_projects h4{
+	color:  #dc7633 ;
+}
+#skills h3{
+	color:yellow;
+}
+#college_projects h4{
+	color:  #dc7633 ;
 }
 #certificates
 {
@@ -302,6 +365,11 @@ body {
 	/* background: rgba(42, 157,244, 1);  */
 
 	/* color:white; */
+}
+#about
+{
+	background: rgba(143, 224, 132, 0.7); 
+	color:#black;
 }
 
 
@@ -319,10 +387,10 @@ color:black}
 /* #college_projects a:link{ */
 /* color:black} */
 
-.about_me a:link{
-color:white}
-.about_me a:visited{
-color:white}
+#about a:link{
+color:black}
+#about a:visited{
+color:black}
 
 .nav a:link{
 color:white}
@@ -340,4 +408,3 @@ ul{
 	margin-left:10px;
 	padding-left:10px;
 }
-

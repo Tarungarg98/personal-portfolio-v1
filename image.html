@@ -8,12 +8,12 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/sidebar.css">
 
-<title> Image Processing </title>
+<title> Calculating volume of a pseudocyst </title>
 </head>
 
 <div class="nav">
-<a href="index.html#about" onclick="closeNavMobile()">About</a>
-<a href="index.html#area_of_interests" onclick="closeNavMobile()">Interests</a>
+<a href="index.html#home" onclick="closeNavMobile()">Home</a>
+<a href="index.html#about" onclick="closeNavMobile()">About Me</a>
 <a href="index.html#education" onclick="closeNavMobile()">Education</a>
 <a href="index.html#workexp" onclick="closeNavMobile()">Experience</a>
 <a href="index.html#skills" onclick="closeNavMobile()">Skills</a>
@@ -27,8 +27,8 @@
 <div id="mySidebar" class="sidebar">
 
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-<div><a href="index.html#about" onclick="closeNavMobile()">About</a></div>
-<div><a href="index.html#area_of_interests" onclick="closeNavMobile()">Interests</a></div>
+<div><a href="index.html#home" onclick="closeNavMobile()">Home</a></div>
+<div><a href="index.html#about" onclick="closeNavMobile()">About Me</a></div>
 <div><a href="index.html#education" onclick="closeNavMobile()">Education</a></div>
 <div><a href="index.html#workexp" onclick="closeNavMobile()">Experience</a></div>
 <div><a href="index.html#skills" onclick="closeNavMobile()">Skills</a></div>
@@ -37,16 +37,11 @@
 
 </div>
 <br>
-<div class="col-md-12";>
-<div id="main">
-<a href="index.html"><u>Back</u></a>
+<div id="image">
 <br>
 <div class="row">
-<div class="col-md-3">
-</div>
-<div class="col-md-6 data" id="image" align='justify'>
-<br>
-<h1 align='center'>Image Processing</h3>
+<div class="col-md-12 data details" align='justify'>
+<h1 align='center'>Calculating volume of a pseudocyst</h3>
 <br>
 <h3 align='center'>What is it about ?</h3>
 <br>
@@ -54,7 +49,7 @@ In this project, we aim to design a device which would calculate the volume of a
 <hr>
 <h3 align='center'>How we made it ?</h3>
 <br>
-The predictions were made using an unsupervised learning technique. A image is passed as input. White and black pixels are separates from each image. While pixels are fitted into 50 clusters iteratively to have a smooth curve. While reducing clusters, convexHull was formed and outliers were removed by removing all points outside 90% of the radius. Less than 3 clusters in a radius of 100 pixels were also removed as outliers. The final 50 clusters from white pixels was fitted using convexHull as the final Boundary. The black pixels inside the Hull were again processed to have a precised estimation of area. The area was then converted to volume by inverting the projection to the provided angle. 
+The predictions were made using an unsupervised learning technique. An image is passed as input. White and black pixels are separates from each image. While pixels are fitted into 50 clusters iteratively to have a smooth curve. While reducing clusters, a convex hull was formed, and outliers were removed by removing all points outside 90% of the radius. Less than 3 clusters in a radius of 100 pixels were also removed as outliers. The final 50 clusters from white pixels were fitted using convex Hull as the final Boundary. The black pixels inside the Hull were again processed to have a precise estimation of area. The area was then converted to volume by inverting the projection to the provided angle. 
 <hr>
 <h3 align='center'>Team</h3>
 <br>
