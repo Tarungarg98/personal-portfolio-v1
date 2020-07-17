@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/sidebar.css">
 
-<title> Calculating volume of a pseudocyst </title>
+<title>Optimal cooling system for Indian climatic conditions.</title>
 </head>
 
 <div class="nav">
@@ -41,19 +41,19 @@
 <br>
 <div class="row">
 <div class="col-md-12 data details" align='justify'>
-<h1 align='center'>Calculating volume of a pseudocyst</h3>
+<h1 align='center'>Optimal cooling system for Indian climatic conditions</h3>
 <br>
 <h3 align='center'>What is it about?</h3>
 <br>
-In this project, we aim to design a device which would calculate the volume of a pseudocyst in the pancreas with image processing obtained from endoscopy.
+In this project, we aim to find the optimal cooling system based on experimental data for Indian climatic conditions.
 <hr>
 <h3 align='center'>How we made it?</h3>
 <br>
-The predictions were made using an unsupervised learning technique. An image is passed as input. White and black pixels are separates from each image. While pixels are fitted into 50 clusters iteratively to have a smooth curve. While reducing clusters, a convex hull was formed, and outliers were removed by removing all points outside 90% of the radius. Less than 3 clusters in a radius of 100 pixels were also removed as outliers. The final 50 clusters from white pixels were fitted using convex Hull as the final Boundary. The black pixels inside the Hull were again processed to have a precise estimation of area. The area was then converted to volume by inverting the projection to the provided angle. 
+We were provided with an experimental dataset for 7 different cooling systems. For each system, we started with normalizing the data to bring all parameters on the same scale. Data was then split into Training Set 70%, Validation Set 15%, Testing Set 15% We experimented a single hidden layer neural network with varying number of neurons for each system. There were 4 inputs variable and 3 output variables to be predicted. We used a linear output layer for the model. Adam optimizer (learning rate of 0.01) was used with Mean Squared Error as the Cost Function. Early stopping was used to avoid overfitting. We were able to achieve excellent accuracy with Mean squared error in the range of 1e-5 and R-square value 0.998.
 <hr>
 <h3 align='center'>Team</h3>
 <br>
-This project was designed during my college in January-2019 to August-2019 under the guidance of Prof Santanu Datta
+This project was designed during my college in August-2019 to July-2020 under the guidance of Prof Santanu Datta.
 <br>
 <br>
 </div>

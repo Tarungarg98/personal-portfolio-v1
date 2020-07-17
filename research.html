@@ -7,10 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/sidebar.css">
-
-<title> Calculating volume of a pseudocyst </title>
+<title> Improving Information Extraction from health-related text using knowledge graphs </title>
 </head>
-
 <div class="nav">
 <a href="index.html#home" onclick="closeNavMobile()">Home</a>
 <a href="index.html#about" onclick="closeNavMobile()">About Me</a>
@@ -19,7 +17,6 @@
 <a href="index.html#skills" onclick="closeNavMobile()">Skills</a>
 <a href="index.html#course_work" onclick="closeNavMobile()">Courses</a>
 <a href="index.html#contact" onclick="closeNavMobile()">Contact</a>
-
 
 </div>
 <input id="navigate" type="button" value="☰" class="openbtn" onclick="openNav()" >
@@ -34,28 +31,26 @@
 <div><a href="index.html#skills" onclick="closeNavMobile()">Skills</a></div>
 <div><a href="index.html#course_work" onclick="closeNavMobile()">Courses</a></div>
 <div><a href="index.html#contact" onclick="closeNavMobile()">Contact</a></div>
-
 </div>
-<br>
-<div id="image">
+
+<div id="research">
 <br>
 <div class="row">
 <div class="col-md-12 data details" align='justify'>
-<h1 align='center'>Calculating volume of a pseudocyst</h3>
+
+<h1 align='center'>Improving Information Extraction from health-related text using knowledge graphs</h3>
 <br>
 <h3 align='center'>What is it about?</h3>
 <br>
-In this project, we aim to design a device which would calculate the volume of a pseudocyst in the pancreas with image processing obtained from endoscopy.
-<hr>
-<h3 align='center'>How we made it?</h3>
-<br>
-The predictions were made using an unsupervised learning technique. An image is passed as input. White and black pixels are separates from each image. While pixels are fitted into 50 clusters iteratively to have a smooth curve. While reducing clusters, a convex hull was formed, and outliers were removed by removing all points outside 90% of the radius. Less than 3 clusters in a radius of 100 pixels were also removed as outliers. The final 50 clusters from white pixels were fitted using convex Hull as the final Boundary. The black pixels inside the Hull were again processed to have a precise estimation of area. The area was then converted to volume by inverting the projection to the provided angle. 
-<hr>
+<p>The medical domain contains massive dataset regarding the symptoms, diseases and medication. Dataset being vast, it's beyond the human capacity to analyse the past records. We aim to design an approach to improve the information extraction from the medical dataset to have a better understanding of the symptoms and the possible diseases in the present time.
+<p>Knowledge graphs are widely used in the domain of NLP to preserve the relationship present in the text. We will be designing the knowledge graph for this task and will use it to extract information from the dataset.
+<br><br>
 <h3 align='center'>Team</h3>
 <br>
-This project was designed during my college in January-2019 to August-2019 under the guidance of Prof Santanu Datta
+The project is being worked as my research internship under the guidance of Prof Amit Sheth and his PhD and Post-Doc students.
 <br>
 <br>
+
 </div>
 
 </div>

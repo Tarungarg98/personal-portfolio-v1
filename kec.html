@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/sidebar.css">
-
-<title> Calculating volume of a pseudocyst </title>
+<title>Vehicle Waiting Time Analysis </title>
 </head>
+
 
 <div class="nav">
 <a href="index.html#home" onclick="closeNavMobile()">Home</a>
@@ -19,7 +19,6 @@
 <a href="index.html#skills" onclick="closeNavMobile()">Skills</a>
 <a href="index.html#course_work" onclick="closeNavMobile()">Courses</a>
 <a href="index.html#contact" onclick="closeNavMobile()">Contact</a>
-
 
 </div>
 <input id="navigate" type="button" value="☰" class="openbtn" onclick="openNav()" >
@@ -37,27 +36,28 @@
 
 </div>
 <br>
-<div id="image">
+<div id="kec">
 <br>
 <div class="row">
 <div class="col-md-12 data details" align='justify'>
-<h1 align='center'>Calculating volume of a pseudocyst</h3>
+<h1 align='center'> Vehicle Waiting Time Analysis </h3>
 <br>
 <h3 align='center'>What is it about?</h3>
 <br>
-In this project, we aim to design a device which would calculate the volume of a pseudocyst in the pancreas with image processing obtained from endoscopy.
+Logistics is a significant part of the industry. Any delay can lead to a massive cost to the company as all inbound/outbound of goods should be continuous. Any idle time increases the inventory cost by a significant margin. In this project, we aim to analyse the reasons leading to an increase in logistics cost. 
 <hr>
-<h3 align='center'>How we made it?</h3>
+<h3 align='center'>What we found?</h3>
 <br>
-The predictions were made using an unsupervised learning technique. An image is passed as input. White and black pixels are separates from each image. While pixels are fitted into 50 clusters iteratively to have a smooth curve. While reducing clusters, a convex hull was formed, and outliers were removed by removing all points outside 90% of the radius. Less than 3 clusters in a radius of 100 pixels were also removed as outliers. The final 50 clusters from white pixels were fitted using convex Hull as the final Boundary. The black pixels inside the Hull were again processed to have a precise estimation of area. The area was then converted to volume by inverting the projection to the provided angle. 
+We studied various factors involved in the logistics of KEC International. Some of the methods proposed were to optimize the number of labours, proper training of workers, vehicles arrival throughout the day. We also did an analysis about which task can be outsourced so the focus on rest can be improved. Overall we were able to define some considerable improvements in the current structure.
 <hr>
 <h3 align='center'>Team</h3>
 <br>
-This project was designed during my college in January-2019 to August-2019 under the guidance of Prof Santanu Datta
+This project was designed during my Summer Internship at KEC International in 2018.
 <br>
 <br>
 </div>
 
+</div>
 </div>
 <br>
 </body>
