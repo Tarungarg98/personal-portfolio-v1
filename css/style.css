@@ -305,7 +305,7 @@ body {
 
 #education
 {
-		background-image:url("../static/book.png");
+	background: rgba(0, 0,0, 0.8); 
 	color:white;
 }
 #skills
