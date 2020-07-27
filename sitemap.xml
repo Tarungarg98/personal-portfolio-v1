@@ -1,57 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://tarungarg98.github.io/</loc>
-  <lastmod>2020-07-27T07:29:31+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://tarungarg98.github.io/</loc>
+	<lastmod>2020-07-27T11:06:32+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://tarungarg98.github.io/research.html</loc>
-  <lastmod>2020-07-27T07:29:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://tarungarg98.github.io/research.html</loc>
+	<lastmod>2020-07-27T11:06:32+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://tarungarg98.github.io/anomaly.html</loc>
-  <lastmod>2020-07-27T07:29:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://tarungarg98.github.io/anomaly.html</loc>
+	<lastmod>2020-07-27T11:06:34+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://tarungarg98.github.io/hotel.html</loc>
-  <lastmod>2020-07-27T07:29:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://tarungarg98.github.io/hotel.html</loc>
+	<lastmod>2020-07-27T11:06:34+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://tarungarg98.github.io/lokly.html</loc>
-  <lastmod>2020-07-27T07:29:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://tarungarg98.github.io/lokly.html</loc>
+	<lastmod>2020-07-27T11:06:35+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://tarungarg98.github.io/kec.html</loc>
-  <lastmod>2020-07-27T07:29:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://tarungarg98.github.io/kec.html</loc>
+	<lastmod>2020-07-27T11:06:35+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://tarungarg98.github.io/optimization.html</loc>
-  <lastmod>2020-07-27T07:29:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://tarungarg98.github.io/optimization.html</loc>
+	<lastmod>2020-07-27T11:06:35+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://tarungarg98.github.io/image.html</loc>
-  <lastmod>2020-07-27T07:29:31+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://tarungarg98.github.io/image.html</loc>
+	<lastmod>2020-07-27T11:06:35+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://tarungarg98.github.io/index.html</loc>
-  <lastmod>2020-07-27T07:29:31+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://tarungarg98.github.io/index.html</loc>
+	<lastmod>2020-07-27T11:06:35+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
-
-
 </urlset>
