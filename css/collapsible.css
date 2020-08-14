@@ -1,7 +1,7 @@
 .collapsible {
   background-color: Transparent;
   /* color: white; */
-  cursor: pointer;
+  /* cursor: pointer; */
   padding: 18px;
   width: 100%;
   border: none;
@@ -10,9 +10,9 @@
   font-size: 15px;
 }
 
-.active, .collapsible:hover {
-  background-color: rgba(143, 224, 132, 0.2);
-}
+/* .active, .collapsible:hover { */
+  /* background-color: rgba(143, 224, 132, 0.2); */
+/* } */
 
 .collapsible:after {
   /* content: '\002B'; */
@@ -30,7 +30,7 @@
   background-color: Transparent;
 
   padding: 0 18px;
-  max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  /* max-height: 0; */
 }
