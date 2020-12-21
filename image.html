@@ -64,7 +64,7 @@ In this project, we aim to design a device which would calculate the volume of a
 <hr>
 <h3 align='center'>How we made it?</h3>
 <br>
-The predictions were made using an unsupervised learning technique. An image is passed as input. White and black pixels are separates from each image. While pixels are fitted into 50 clusters iteratively to have a smooth curve. While reducing clusters, a convex hull was formed, and outliers were removed by removing all points outside 90% of the radius. Less than 3 clusters in a radius of 100 pixels were also removed as outliers. The final 50 clusters from white pixels were fitted using convex Hull as the final Boundary. The black pixels inside the Hull were again processed to have a precise estimation of area. The area was then converted to volume by inverting the projection to the provided angle. 
+The predictions were made using an unsupervised learning technique. An image is passed as input. White and black pixels are separates from each image. White pixels are fitted into 50 clusters iteratively to have a smooth curve. While reducing clusters, a convex hull was formed, and outliers were removed by removing all points outside 90% of the radius. Less than 3 clusters in a radius of 100 pixels were also removed as outliers. The final 50 clusters from white pixels were fitted using convex Hull as the final Boundary. The black pixels inside the Hull were again processed to have a precise estimation of area. The area was then converted to volume by inverting the projection to the provided angle. 
 <hr>
 <h3 align='center'>Team</h3>
 <br>
