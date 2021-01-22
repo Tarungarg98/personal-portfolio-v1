@@ -60,11 +60,12 @@
 <br>
 <h3 align='center'>What is it about?</h3>
 <br>
-In this project, we aim to find the optimal cooling system based on experimental data for Indian climatic conditions.
+In this project, we aim to find the optimal cooling system based on experimental data for Indian climatic conditions. (Paper under Review)
 <hr>
 <h3 align='center'>How we made it?</h3>
 <br>
-We were provided with an experimental dataset for 7 different cooling systems. For each system, we started with normalizing the data to bring all parameters on the same scale. Data was then split into Training Set 70%, Validation Set 15%, Testing Set 15% We experimented a single hidden layer neural network with varying number of neurons for each system. There were 4 inputs variable and 3 output variables to be predicted. We used a linear output layer for the model. Adam optimizer (learning rate of 0.01) was used with Mean Squared Error as the Cost Function. Early stopping was used to avoid overfitting. We were able to achieve excellent accuracy with Mean squared error in the range of 1e-5 and R-square value 0.998.
+We were provided with an experimental dataset for 7 different cooling systems. Initially we performed Exploratory Data Analysis to understand the data. A Clustering Algorithm was developed to segment the data points based on psychrometric chart
+for further analysis. Artificial Neural Network was used to fit the model on simulated data points. For each system, we started with normalizing the data to bring all parameters on the same scale. Data was then split into Training Set 70%, Validation Set 15%, Testing Set 15% We experimented a single hidden layer neural network with varying number of neurons for each system. There were 4 inputs variable and 3 output variables to be predicted. We used a linear output layer for the model. Adam optimizer (learning rate of 0.01) was used with Mean Squared Error as the Cost Function. Early stopping was used to avoid overfitting. We were able to achieve excellent accuracy with Mean squared error in the range of 1e-5 and R-square value 0.998.
 <hr>
 <h3 align='center'>Team</h3>
 <br>
