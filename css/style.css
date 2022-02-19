@@ -332,6 +332,11 @@ body {
 }
 #college_projects
 {
+	background: rgba(223, 213, 84, 0.8); 
+	color:black;
+}
+#publications
+{
 	background: rgba(143, 224, 132, 0.8); 
 	color:black;
 }
